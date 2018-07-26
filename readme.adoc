@@ -11,17 +11,17 @@
 
 ==== zookeeper 安装
 
-* http://zookeeper.apache.org/releases.html#download[下载 zookeeper]
-* 解压， 进入`conf`
-* 将`zoo_sample.cfg` 重命名为 `zoo.cfg`
+* `http://zookeeper.apache.org/releases.html#download[下载 zookeeper]`
+* 解压， 进入 `conf`
+* 将 `zoo_sample.cfg` 重命名为 `zoo.cfg`
 * 编辑 `zoo.cfg`， 指定 `dataDir`
-* 运行`cmd`, 进入`bin`目录，输入`zkServer.cmd`，启动 `zookeeper`.
+* 运行 `cmd`, 进入 `bin`目录，输入`zkServer.cmd`，启动 `zookeeper`.
 
 ==== kafka 安装
 
-* https://kafka.apache.org/downloads[下载 kafka]
+* `https://kafka.apache.org/downloads[下载 kafka]`
 * 解压
-* 运行`cmd`, 输入`输入bin\windows\kafka-server-start.bat config\server.properties`，启动 `kafka`
+* 运行 `cmd`, 输入 `输入bin\windows\kafka-server-start.bat config\server.properties`，启动 `kafka`
 * 测试:
 ** 运行以下命令
 [source,shell]
@@ -36,6 +36,6 @@ kafka-console-consumer.bat --zookeeper localhost:2181 --topic test1
 === 项目运行
 
 * 启动项目
-* 使用浏览器访问 `http://localhost:8080/ws`，点击连接
+* 使用浏览器访问 `http://localhost:8080/ws`，点击 `连接`
 * 通过运行单元测试 `KafkaProducerTest` 或者发送 `post` 请求到 `/message/send`
 * 在浏览器会看到发送的内容
